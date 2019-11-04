@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:300,400,700&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tropical Voyages Thailand</title>
+</head>
+
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title">Tropical Voyages Demo</span>
+				<!-- Add spacer, to align navigation to the right -->
+				<div class="mdl-layout-spacer"></div>
+				<!-- Navigation. We hide it in small screens. -->
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
+					<a class="mdl-navigation__link" href="">Packages</a>
+					<button id="startRsvp" style="color:#fff;border-color:#fff">Sign In</button>
+				</nav>
+			</div>
+		</header>
+		<!-- <div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Title</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="">Link</a>
+				<a class="mdl-navigation__link" href="">Link</a>
+				<a class="mdl-navigation__link" href="">Link</a>
+				<a class="mdl-navigation__link" href="">Link</a>
+			</nav>
+		</div> -->
+		<main class="mdl-layout__content">
+			<div class="page-content">
+
+				<div id="app">
+
+					<!-- <img src="https://firebasestorage.googleapis.com/v0/b/fir-images-a61c9.appspot.com/o/firestore.png?alt=media&token=56d039dc-4a6c-477b-a153-a4bb8234646f" /> -->
+					<!-- <img src="https://firebasestorage.googleapis.com/v0/b/fir-images-a61c9.appspot.com/o/hosting.png?alt=media&token=57c8adb6-08c4-43f7-9395-4c299896a36c" /> -->
+					<!-- <img src="https://firebasestorage.googleapis.com/v0/b/fir-images-a61c9.appspot.com/o/codelab.png?alt=media&token=f45f808c-ce40-4b34-944c-8d8fac00e13d" /> -->
+
+					<section id="firebaseui-auth-container"></section>
+
+					<section id="packages">
+            <img src="https://firebasestorage.googleapis.com/v0/b/fir-images-a61c9.appspot.com/o/codelab.png?alt=media&token=f45f808c-ce40-4b34-944c-8d8fac00e13d" />
+            <br/>
+						<h2>Magic Thailand Tour with Khmer Temple in Isan</h2>
+						
+	<p><strong>Price start from 1,950 THB/day</strong>
+</p>
+<table>
+    <thead>
+        <tr>
+            <th>1 pax</th>
+            <th>2-3 pax</th>
+            <th>4-5 pax</th>
+            <th>6-7 pax</th>
+            <th>8 pax</th>
+            <th>single supplement</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>62,640</td>
+            <td>31,320</td>
+            <td>20,850</td>
+            <td>17,360</td>
+            <td>15,615</td>
+            <td>4,350</td>
+        </tr>
+    </tbody>
+</table>
+<ul>
+  <li>The prices listed are prices per person in Thai Baht
+  </li>
+  <li>
+A single supplement is a charge paid by a solo traveler because only one person is using a room or cabin.
+  </li>
+  <li>
+A child (0-12 Yrs) shares a room with parents as a third person with a bed receives 25% discount (limit to 1 child with discount per room)
+  </li>
+</ul>
+
+<p><i class="material-icons">
+today
+</i><strong>13 Days</strong>
+</p>
+
+<p><i class="material-icons">
+room
+</i><strong>Places to Visit</strong>
+<br/>
+<small>
+Bangkok, Damnoen Saduak, Nakorn Pathom, Ayutthaya, Lopburi, Phitsanulok, Sukhothai, Chiang Rai, Chiang Mai, Chiang Khan (Loei), Korat, Khon Kaen
+</small>
+</p>
+
+
+						<p><i class="material-icons">
+announcement
+</i><strong>Remarks</strong>
+<ul>
+  <li>In case of non availability of hotels mentioned in your program, we will offer a new list of hotels with same or higher standard
+  </li>
+  <li>
+Our classification as stars is based on the provision offered as well as the appreciation of our quality service
+  </li>
+</ul>
+</p>
+						<hr>
+					</section>
+
+
+
+
+
+					<section id="add-package">
+            <form id="form-package">
+              <input type="text" id="package-title"><br/><br/>
+              <input type="number" id="duration-in-day"><br/><br/>
+						<button  type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+  Add New Package
+</button>
+            </form>
+					</section>
+
+					<section id="guestbook-container">
+						<h2>Discussion</h2>
+
+						<form id="leave-message">
+							<label>Leave a message: </label>
+							<input type="text" id="message">
+							<button  >
+       <i class="material-icons">send</i>
+       <span>SEND</span>
+     </button>
+						</form>
+
+						<section id="guestbook"></section>
+
+					</section>
+
+				</div>
+
+			</div>
+		</main>
+	</div>
+
+
+
+<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">c.worraanong@gmail.com</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="#">Help</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+
+</html>

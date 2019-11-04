@@ -23,8 +23,7 @@
 				<!-- Add spacer, to align navigation to the right -->
 				<div class="mdl-layout-spacer"></div>
 				<!-- Navigation. We hide it in small screens. -->
-				<nav class="mdl-navigation mdl-layout--large-screen-only">
-					<a class="mdl-navigation__link" href="">Packages</a>
+				<nav class="mdl-navigation">
 					<button id="startRsvp" style="color:#fff;border-color:#fff">Sign In</button>
 				</nav>
 			</div>
@@ -48,6 +47,22 @@
 					<!-- <img src="https://firebasestorage.googleapis.com/v0/b/fir-images-a61c9.appspot.com/o/codelab.png?alt=media&token=f45f808c-ce40-4b34-944c-8d8fac00e13d" /> -->
 
 					<section id="firebaseui-auth-container"></section>
+
+          
+					<section id="add-package" style="display:none">
+            <h1>Add New Package</h1>
+            <form id="form-package">
+              Package name
+              <input type="text" id="package-title" le required><br/><br/>
+              Duration (day)
+              <input type="number" id="duration-in-day" required><br/><br/>
+						<button  type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+  Create
+</button>
+            </form>
+            <hr/>
+					</section>
+
 
 					<section id="packages">
             <img src="https://firebasestorage.googleapis.com/v0/b/fir-images-a61c9.appspot.com/o/codelab.png?alt=media&token=f45f808c-ce40-4b34-944c-8d8fac00e13d" />
@@ -122,17 +137,8 @@ Our classification as stars is based on the provision offered as well as the app
 
 
 
-					<section id="add-package">
-            <form id="form-package">
-              <input type="text" id="package-title"><br/><br/>
-              <input type="number" id="duration-in-day"><br/><br/>
-						<button  type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-  Add New Package
-</button>
-            </form>
-					</section>
 
-					<section id="guestbook-container">
+					<section id="guestbook-container" style="display:none"> 
 						<h2>Discussion</h2>
 
 						<form id="leave-message">
@@ -154,17 +160,6 @@ Our classification as stars is based on the provision offered as well as the app
 		</main>
 	</div>
 
-
-
-<footer class="mdl-mini-footer">
-  <div class="mdl-mini-footer__left-section">
-    <div class="mdl-logo">c.worraanong@gmail.com</div>
-    <ul class="mdl-mini-footer__link-list">
-      <li><a href="#">Help</a></li>
-      <li><a href="#">Privacy & Terms</a></li>
-    </ul>
-  </div>
-</footer>
 </body>
 
 </html>

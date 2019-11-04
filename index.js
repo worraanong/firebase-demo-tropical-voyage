@@ -22,6 +22,11 @@ const numberAttending = document.getElementById('number-attending');
 const rsvpYes = document.getElementById('rsvp-yes');
 const rsvpNo = document.getElementById('rsvp-no');
 
+
+const packageFormContainer = document.getElementById('add-package');
+
+
+
 var rsvpListener = null;
 var guestbookListener = null;
 
@@ -63,12 +68,12 @@ const ui = new firebaseui.auth.AuthUI(firebase.auth());
 firebase.auth().onAuthStateChanged((user)=> {
   if (user) {
     startRsvpButton.textContent = "Sign Out"
-    guestbookContainer.style.display = "block";
+    packageFormContainer.style.display = "block";
     subscribeGuestbook();
   }
   else {
     startRsvpButton.textContent = "Sign In"
-    guestbookContainer.style.display = "none";
+    packageFormContainer.style.display = "none";
     unsubscribeGuestbook();
   }
 });
